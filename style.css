@@ -28,3 +28,15 @@ nav,
     list-style: none;
     font-size: 1.5rem;
  }
+ a :hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(37, 150, 190);
+ }
+ .logo{
+    font-size: 2rem;
+ }
+ .logo :hover{
+    
+ }
