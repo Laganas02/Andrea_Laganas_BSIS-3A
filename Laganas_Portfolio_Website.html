@@ -4,219 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laganas Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #6a3e73, #be6e9e);
-        color: white;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-
-      .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        padding: 0;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        font-size: 18px;
-      }
-
-      nav a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-      }
-
-      h1,h2,h3 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      section {
-        margin: 40px 0;
-      }
-
-      p {
-        text-align: center;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-      }
-
-      table,th,td {
-        border: 3px solid #be6e9e;
-        padding: 10px;
-        text-align: center;
-      }
-
-      form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        max-width: 500px;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 10px;
-      }
-
-      input[type="submit"] {
-        background-color: #a45e8e;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #7d487a;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      main {
-        padding-bottom: 50px;
-      }
-      .project-card {
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-      }
-
-      a.github-link {
-        color: blue;
-        text-decoration: underline;
-      }
-
-      a.github-link:hover {
-        color: #ffd700;
-      }
-    </style>
   </head>
-  <body>
-    <div class="container">
+  <body style="background: linear-gradient(to bottom, #6A3E73, #7D487A, #905583, #A45E8E, #BE6E9E);">
+    <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
       <header>
         <nav>
-          <ul>
+          <ul style="list-style-type: none; padding: 0; display: flex; justify-content: space-around; font-size:300%;">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <h1>Welcome to Laganas's Portfolio</h1>
+        <h1 style="text-align: center;font-size:250%;">Welcome to Laganas's Portfolio</h1>
       </header>
       <main>
         <section id="home">
-          <h2>About Me</h2>
-          <p>
-            Hi, I’m Andrea D. Laganas, a student still learning the ropes of programming. 
-            I might not be a master coder yet, but I’ve picked up some useful skills along the way. 
-            My journey into programming hasn’t been easy, but I’m persistent, always eager to 
+          <h2 style="text-align: center; font-size:200%;">About Me</h2>
+          <p style="text-align: center; font-size:100%;">
+            Hi, I’m Andrea D. Laganas, a student still learning the ropes of programming.
+            I might not be a master coder yet, but I’ve picked up some useful skills along the way.
+            My journey into programming hasn’t been easy, but I’m persistent, always eager to
             improve and learn new things.
           </p>
-          <p>
-            While I’m not the most advanced developer, I’ve worked on a few projects using languages 
-            like C, C++, and Java. I’ve also explored web development with HTML5 and JavaScript. 
-            Although I still have a lot to learn, I’m proud of what I’ve managed to achieve so far. 
-            This portfolio showcases some of the projects I’ve built and the skills I’m developing. 
+          <p style="text-align: center; font-size:100%;">
+            While I’m not the most advanced developer, I’ve worked on a few projects using languages
+            like C, C++, and Java. I’ve also explored web development with HTML5 and JavaScript.
+            Although I still have a lot to learn, I’m proud of what I’ve managed to achieve so far.
+            This portfolio showcases some of the projects I’ve built and the skills I’m developing.
             I look forward to learning even more and growing as a developer.
           </p>
         </section>
 
-
-        </section>
         <section id="projects">
-          <h2>Projects Page</h2>
-          <article class="project-card">
+          <h2 style="text-align: center; font-size:200%;">Projects Page</h2>
+          <article style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
             <h3>Project 1: 2048 Game</h3>
             <p><strong>Description:</strong> A clone of the popular 2048 puzzle game where players combine numbers to reach the 2048 tile.</p>
             <p><strong>Technologies Used:</strong> C Languages, Code::Blocks</p>
             <p>
               <strong>GitHub Repository:</strong>
-              <a href="https://github.com/Laganas02/Projects" class="github-link" target="_blank">Projects GitHub</a>
+              <a href="https://github.com/Laganas02/Projects" target="_blank">Projects GitHub</a>
             </p>
           </article>
-          <article class="project-card">
+          <article style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
             <h3>Project 2: Library Management System</h3>
-            <p><strong>Description:</strong> A system designed to manage library operations such as tracking books, managing members, and issuing/returning books. But if you didn't return the book in specific times, you can't borrow a book in library.</p>
+            <p><strong>Description:</strong> A system designed to manage library operations such as tracking books, managing members, and issuing/returning books. If you don't return the book in specific times, you can't borrow a book in the library.</p>
             <p><strong>Technologies Used:</strong> C++, Code::Blocks</p>
             <p>
               <strong>GitHub Repository:</strong>
-              <a href="https://github.com/Laganas02/Projects" class="github-link" target="_blank">Projects GitHub</a>
+              <a href="https://github.com/Laganas02/Projects" target="_blank">Projects GitHub</a>
             </p>
           </article>
-          <article class="project-card">
+          <article style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
             <h3>Project 3: ATM Simulation</h3>
-            <p><strong>Description:</strong> A simulation of an ATM system where users can create new account, check balances, withdraw a cash in divisible by 100, deposit, and change a pincode of the account.</p>
+            <p><strong>Description:</strong> A simulation of an ATM system where users can create new accounts, check balances, withdraw cash in multiples of 100, deposit, and change the account's PIN code.</p>
             <p><strong>Technologies Used:</strong> C++, Code::Blocks</p>
             <p>
               <strong>GitHub Repository:</strong>
-              <a href="https://github.com/Laganas02/Projects" class="github-link" target="_blank">Projects GitHub</a>
+              <a href="https://github.com/Laganas02/Projects" target="_blank">Projects GitHub</a>
             </p>
           </article>
         </section>
+
         <section id="skills">
-          <h2>Skills Page</h2>
-          <table>
+          <h2 style="text-align: center; font-size:200%;">Skills Page</h2>
+          <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
             <thead>
               <tr>
-                <th>Skill Level</th>
-                <th>Programming Languages</th>
-                <th>Tools</th>
+                <th style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Skill Level</th>
+                <th style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Programming Languages</th>
+                <th style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Tools</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Advanced</td>
-                <td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Advanced</td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">
                   <ul>
                     <li>C Languages</li>
                     <li>C++ Languages</li>
                   </ul>
                 </td>
-                <td>CodeBlocks</td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">CodeBlocks</td>
               </tr>
               <tr>
-                <td>Intermediate</td>
-                <td>JavaScript</td>
-                <td>Apache Netbeans</td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Intermediate</td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">JavaScript</td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Apache Netbeans</td>
               </tr>
               <tr>
-                <td>Beginner</td>
-                <td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">Beginner</td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">
                   <ul>
                     <li>HTML5</li>
                     <li>SQL</li>
                   </ul>
                 </td>
-                <td>
+                <td style="border: 3px solid #be6e9e; padding: 10px; text-align: center;">
                   <ul>
                     <li>Visual Studio</li>
                     <li>MySql Workbench</li>
@@ -226,23 +111,30 @@
             </tbody>
           </table>
         </section>
+
         <section id="contact">
-          <h2>Contact Page</h2>
-          <form action="submit_form.php" method="POST">
+          <h2 style="text-align: center; font-size:200%;">Contact Page</h2>
+          <form action="submit_form.php" method="POST" style="display: flex; flex-direction: column; align-items: center;">
             <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
+            <input type="text" id="name" name="name" required style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ccc; margin-bottom: 10px;" /><br />
 
             <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
+            <input type="email" id="email" name="email" required style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ccc; margin-bottom: 10px;" /><br />
 
             <label for="message">Message:</label><br />
-            <textarea id="message" name="message" required></textarea
-            ><br /><br />
+            <textarea id="message" name="message" required style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ccc; margin-bottom: 10px;"></textarea><br />
 
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send" style="background-color: #a45e8e; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" />
           </form>
         </section>
       </main>
+      <footer style="text-align: center; margin-top: 40px;">
+        <p>&copy; 2024 Andrea D. Laganas</p>
+        <p>
+          <a href="https://github.com/Laganas02" target="_blank">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
