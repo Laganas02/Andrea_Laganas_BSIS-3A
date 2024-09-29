@@ -1,4 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>Andrea D. Laganas </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laganas Portfolio</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #6A3E73, #BE6E9E);
+        color: white;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      /* Container to center the content */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Navigation Styles */
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+      }
+
+      /* Section and Heading Styles */
+      h1, h2, h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      section {
+        margin: 40px 0;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      /* Skills Table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      table, th, td {
+        border: 1px solid #BE6E9E;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Form Styles */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        background-color: #A45E8E;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #7D487A;
+      }
+
+      /* Ensuring scroll behavior */
+      html, body {
+        height: 100%;
+      }
+
+      /* This ensures the page content can scroll */
+      main {
+        padding-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>Welcome to Laganas's Portfolio</h1>
+      </header>
+      <main>
+        <section id="home">
+          <h2>About Me</h2>
+          <p>Hello, I'm Andrea D. Laganas, a passionate web developer.</p>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <article>
+            <h3>Project 4:</h3>
+            <p>A brief description of Project 4. This project involves building an interactive website using JavaScript and HTML5.</p>
+          </article>
+          <hr />
+          <article>
+            <h3>Project 2:</h3>
+            <p>A brief description of Project 2. This project includes setting up a basic web server using Python.</p>
+          </article>
+        </section>
+        <section id="skills">
+          <h2>Skills</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Skill Level</th>
+                <th>Skills</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Advanced</td>
+                <td>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>HTML5</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Intermediate</td>
+                <td>
+                  <ul>
+                    <li>Python</li>
+                    <li>Git</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Beginner</td>
+                <td>
+                  <ul>
+                    <li>Java</li>
+                    <li>SQL</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" required></textarea><br /><br />
+
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
