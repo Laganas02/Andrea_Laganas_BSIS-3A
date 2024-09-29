@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laganas Portfolio</title>
     <style>
-      /* Global Styles */
       body {
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #6A3E73, #BE6E9E);
+        background: linear-gradient(135deg, #6a3e73, #be6e9e);
         color: white;
         margin: 0;
         padding: 0;
         height: 100%;
       }
 
-      /* Container to center the content */
       .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
       }
 
-      /* Navigation Styles */
       nav ul {
         display: flex;
         justify-content: space-around;
@@ -42,8 +39,7 @@
         border-radius: 5px;
       }
 
-      /* Section and Heading Styles */
-      h1, h2, h3 {
+      h1,h2,h3 {
         text-align: center;
         margin-bottom: 20px;
       }
@@ -56,20 +52,18 @@
         text-align: center;
       }
 
-      /* Skills Table */
       table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
       }
 
-      table, th, td {
-        border: 1px solid #BE6E9E;
+      table,th,td {
+        border: 3px solid #be6e9e;
         padding: 10px;
         text-align: center;
       }
 
-      /* Form Styles */
       form {
         display: flex;
         flex-direction: column;
@@ -88,7 +82,7 @@
       }
 
       input[type="submit"] {
-        background-color: #A45E8E;
+        background-color: #a45e8e;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -97,17 +91,31 @@
       }
 
       input[type="submit"]:hover {
-        background-color: #7D487A;
+        background-color: #7d487a;
       }
 
-      /* Ensuring scroll behavior */
-      html, body {
+      html,
+      body {
         height: 100%;
       }
 
-      /* This ensures the page content can scroll */
       main {
         padding-bottom: 50px;
+      }
+      .project-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      a.github-link {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      a.github-link:hover {
+        color: #ffd700;
       }
     </style>
   </head>
@@ -127,27 +135,61 @@
       <main>
         <section id="home">
           <h2>About Me</h2>
-          <p>Hello, I'm Andrea D. Laganas, a passionate web developer.</p>
+          <p>
+            Hi, I’m Andrea D. Laganas, a student still learning the ropes of programming. 
+            I might not be a master coder yet, but I’ve picked up some useful skills along the way. 
+            My journey into programming hasn’t been easy, but I’m persistent, always eager to 
+            improve and learn new things.
+          </p>
+          <p>
+            While I’m not the most advanced developer, I’ve worked on a few projects using languages 
+            like C, C++, and Java. I’ve also explored web development with HTML5 and JavaScript. 
+            Although I still have a lot to learn, I’m proud of what I’ve managed to achieve so far. 
+            This portfolio showcases some of the projects I’ve built and the skills I’m developing. 
+            I look forward to learning even more and growing as a developer.
+          </p>
+        </section>
+
+
         </section>
         <section id="projects">
-          <h2>Projects</h2>
-          <article>
-            <h3>Project 4:</h3>
-            <p>A brief description of Project 4. This project involves building an interactive website using JavaScript and HTML5.</p>
+          <h2>Projects Page</h2>
+          <article class="project-card">
+            <h3>Project 1: 2048 Game</h3>
+            <p><strong>Description:</strong> A clone of the popular 2048 puzzle game where players combine numbers to reach the 2048 tile.</p>
+            <p><strong>Technologies Used:</strong> C Languages, Code::Blocks</p>
+            <p>
+              <strong>GitHub Repository:</strong>
+              <a href="https://github.com/Laganas02/Projects" class="github-link" target="_blank">Projects GitHub</a>
+            </p>
           </article>
-          <hr />
-          <article>
-            <h3>Project 2:</h3>
-            <p>A brief description of Project 2. This project includes setting up a basic web server using Python.</p>
+          <article class="project-card">
+            <h3>Project 2: Library Management System</h3>
+            <p><strong>Description:</strong> A system designed to manage library operations such as tracking books, managing members, and issuing/returning books. But if you didn't return the book in specific times, you can't borrow a book in library.</p>
+            <p><strong>Technologies Used:</strong> C++, Code::Blocks</p>
+            <p>
+              <strong>GitHub Repository:</strong>
+              <a href="https://github.com/Laganas02/Projects" class="github-link" target="_blank">Projects GitHub</a>
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Project 3: ATM Simulation</h3>
+            <p><strong>Description:</strong> A simulation of an ATM system where users can create new account, check balances, withdraw a cash in divisible by 100, deposit, and change a pincode of the account.</p>
+            <p><strong>Technologies Used:</strong> C++, Code::Blocks</p>
+            <p>
+              <strong>GitHub Repository:</strong>
+              <a href="https://github.com/Laganas02/Projects" class="github-link" target="_blank">Projects GitHub</a>
+            </p>
           </article>
         </section>
         <section id="skills">
-          <h2>Skills</h2>
+          <h2>Skills Page</h2>
           <table>
             <thead>
               <tr>
                 <th>Skill Level</th>
-                <th>Skills</th>
+                <th>Programming Languages</th>
+                <th>Tools</th>
               </tr>
             </thead>
             <tbody>
@@ -155,26 +197,29 @@
                 <td>Advanced</td>
                 <td>
                   <ul>
-                    <li>JavaScript</li>
-                    <li>HTML5</li>
+                    <li>C Languages</li>
+                    <li>C++ Languages</li>
                   </ul>
                 </td>
+                <td>CodeBlocks</td>
               </tr>
               <tr>
                 <td>Intermediate</td>
-                <td>
-                  <ul>
-                    <li>Python</li>
-                    <li>Git</li>
-                  </ul>
-                </td>
+                <td>JavaScript</td>
+                <td>Apache Netbeans</td>
               </tr>
               <tr>
                 <td>Beginner</td>
                 <td>
                   <ul>
-                    <li>Java</li>
+                    <li>HTML5</li>
                     <li>SQL</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Visual Studio</li>
+                    <li>MySql Workbench</li>
                   </ul>
                 </td>
               </tr>
@@ -182,7 +227,7 @@
           </table>
         </section>
         <section id="contact">
-          <h2>Contact Me</h2>
+          <h2>Contact Page</h2>
           <form action="submit_form.php" method="POST">
             <label for="name">Name:</label><br />
             <input type="text" id="name" name="name" required /><br /><br />
@@ -191,7 +236,8 @@
             <input type="email" id="email" name="email" required /><br /><br />
 
             <label for="message">Message:</label><br />
-            <textarea id="message" name="message" required></textarea><br /><br />
+            <textarea id="message" name="message" required></textarea
+            ><br /><br />
 
             <input type="submit" value="Send" />
           </form>
