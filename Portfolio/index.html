@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrea Laganas Portfolio</title>
+
+  <!-- Link to Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to Media Queries CSS -->
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- Header with Hamburger -->
+  <header>
+    <nav>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger-menu">
+        &#9776; <!-- This is the hamburger icon -->
+      </div>
+      <!-- Navigation Links -->
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sections (About, Skills, Projects, Experience, Contact) -->
+  <section id="about">
+    <h1>Welcome to Andrea Laganas's Portfolio</h1>
+    <p>Hi, I’m Andrea D. Laganas, a student learning programming and web development. While I am still exploring the field, I’ve worked with C, C++, JavaScript, and HTML5. This portfolio showcases some of my projects and skills. I’m eager to grow as a developer and take on exciting challenges.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill Level</th>
+          <th>Programming Languages</th>
+          <th>Tools</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Advanced</td>
+          <td>C, C++</td>
+          <td>Code::Blocks</td>
+        </tr>
+        <tr>
+          <td>Intermediate</td>
+          <td>JavaScript</td>
+          <td>Apache NetBeans</td>
+        </tr>
+        <tr>
+          <td>Beginner</td>
+          <td>HTML5, SQL</td>
+          <td>Visual Studio, MySQL Workbench</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>2048 Game</h3>
+      <p>A clone of the 2048 game using C in Code::Blocks. Combine tiles to reach 2048.</p>
+      <a href="https://github.com/Laganas02/Projects" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Library Management System</h3>
+      <p>System to manage library operations like tracking books and members using C++.</p>
+      <a href="https://github.com/Laganas02/Projects" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>ATM Simulation</h3>
+      <p>Simulates an ATM system for account management and transactions using C++.</p>
+      <a href="https://github.com/Laganas02/Projects" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Currently a student developer exploring web development and programming. Projects focus on practical applications like game design and system management.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Andrea Laganas. All Rights Reserved.</p>
+    <p>
+      <a href="https://github.com/Laganas02" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/andrea-laganas" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
